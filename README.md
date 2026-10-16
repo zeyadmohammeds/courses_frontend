@@ -1,46 +1,70 @@
-## Courses System
+# Courses Management Frontend
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-
-![preview](public/assets/images/courses-preview.jpg)
-
-> A modern React-based Courses Management System built with Material-UI components and React + Vite.js.
-
-## Pages
-
-- [Dashboard](http://localhost:3039/)
-- [Courses](http://localhost:3039/courses)
-- [Instructors](http://localhost:3039/instructors)
-- [Students](http://localhost:3039/students)
-- [Enrollments](http://localhost:3039/enrollments)
-- [Sign in](http://localhost:3039/sign-in)
-- [Not found](http://localhost:3039/404)
-
-## Quick start
-
-- Clone the repo: `git clone https://github.com/your-org/courses-system.git`
-- Recommended: `Node.js v20.x`
-- **Install:** `npm i` or `yarn install`
-- **Start:** `npm run dev` or `yarn dev`
-- **Build:** `npm run build` or `yarn build`
-- Open browser: `http://localhost:3039`
+A React-based dashboard interface for managing courses, instructors, students, and enrollments. Built with React, Vite, and Material UI.
 
 ## Features
 
-- **Course Management**: Create, update, and manage courses
-- **Instructor Management**: Manage instructor profiles and assignments
-- **Student Management**: Track student information and progress
-- **Enrollment System**: Handle course enrollments and registrations
-- **Dashboard**: Overview of system statistics and analytics
-- **Authentication**: Secure login and user management
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Material-UI Components**: Modern and professional UI components
-- **Real-time Updates**: Live data synchronization
+- Dashboard and overview screens
+- Course management interface
+- Instructor and student management screens
+- Enrollment workflows
+- Sign-in interface
+- Responsive layout and reusable Material UI components
 
-## License
+> Feature availability and live data integration depend on the current application and its configured backend. Do not assume that every screen is connected to a production API.
 
-Distributed under the [MIT](https://github.com/your-org/courses-system/blob/main/LICENSE.md) license.
+## Tech stack
 
-## Contact us
+- React
+- Vite
+- Material UI
+- JavaScript / frontend tooling
 
-Email: support@courses-system.com
+## Requirements
+
+- Node.js (use the version supported by the project's dependencies)
+- npm
+
+## Getting started
+
+Clone this repository:
+
+```bash
+git clone https://github.com/zeyadmohammeds/courses_frontend.git
+cd courses_frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Vite will print the local URL in your terminal. Open that URL in your browser.
+
+## Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Configuration
+
+If the application uses a remote API, configure the appropriate Vite environment variable in a local `.env` file according to the source code. Only variables prefixed with `VITE_` are exposed to client-side code; never put private secrets in frontend environment variables.
+
+Do not commit `.env` files or credentials.
+
+## Repository
+
+- Source: [zeyadmohammeds/courses_frontend](https://github.com/zeyadmohammeds/courses_frontend)
+
+## Author
+
+**Zeyad Mohammed** — [GitHub](https://github.com/zeyadmohammeds)
