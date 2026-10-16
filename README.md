@@ -18,7 +18,7 @@ A React-based dashboard interface for managing courses, instructors, students, a
 - React
 - Vite
 - Material UI
-- JavaScript / frontend tooling
+- JavaScript / TypeScript tooling
 
 ## Requirements
 
@@ -27,22 +27,10 @@ A React-based dashboard interface for managing courses, instructors, students, a
 
 ## Getting started
 
-Clone this repository:
-
 ```bash
 git clone https://github.com/zeyadmohammeds/courses_frontend.git
 cd courses_frontend
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
@@ -57,9 +45,13 @@ npm run preview
 
 ## Configuration
 
-If the application uses a remote API, configure the appropriate Vite environment variable in a local `.env` file according to the source code. Only variables prefixed with `VITE_` are exposed to client-side code; never put private secrets in frontend environment variables.
+Copy `.env.example` to a local environment file and provide the values required for your setup.
 
-Do not commit `.env` files or credentials.
+- `RESEND_API_KEY`: server-side key used by the email OTP endpoint
+- `OTP_SECRET`: long, random server-side secret used to sign/verify OTP data
+- Any Vite-prefixed variables are exposed to browser code. Never place private keys in variables prefixed with `VITE_`.
+
+Configure server-side values in your deployment platform's environment settings. Do not commit real credentials. If a provider key was previously committed, rotate it; removing it from the current file does not erase it from Git history.
 
 ## Repository
 
